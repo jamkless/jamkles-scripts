@@ -1,9 +1,4 @@
-# ReadMe
 
-made by [**jamkles**]
-
-### Example
-```lua
 getgenv().Prediction = 0.135 ---// Ping prediction customised by you //--
 getgenv().Smoothness = 0.9  ---// don’t use above 1 otherwise the camlock will go weird  //--
 getgenv().AimPart = "UpperTorso" ---//  Choose what part to aim //--
@@ -14,7 +9,7 @@ getgenv().AutoPred = true
 
 local Tool = Instance.new("Tool")
 Tool.RequiresHandle = false
-Tool.Name = "Lunar Cam"
+Tool.Name = "aim assist tool"
 Tool.Parent = game.Players.LocalPlayer.Backpack
 
 local player = game.Players.LocalPlayer
@@ -24,7 +19,7 @@ local function connectCharacterAdded()
 end
 
 connectCharacterAdded()
-
+print("jamkles lua")
 player.CharacterRemoving:Connect(function()
     Tool.Parent = game.Players.LocalPlayer.Backpack
 end)
@@ -96,7 +91,7 @@ end
 function WTVP(arg)
     return Camera:WorldToViewportPoint(arg)
 end
-
+print("jamkles lua")
 function WTSP(arg)
     return Camera.WorldToScreenPoint(Camera, arg)
 end
@@ -152,6 +147,7 @@ end)
 
 -- Loop update FOV and loop camera lock onto target
 
+print("jamkles lua")
 RS.RenderStepped:Connect(function()
     update()
     if AimlockState == true then
@@ -172,6 +168,7 @@ for _, con in next, getconnections(workspace.CurrentCamera.Changed) do
   task.wait()
     con:Disable()
 end
+print("jamkles lua")
 for _, con in next, getconnections(workspace.CurrentCamera:GetPropertyChangedSignal("CFrame")) do
    task.wait()
     con:Disable()
@@ -205,4 +202,3 @@ pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetVal
 end
 end
 
-```
