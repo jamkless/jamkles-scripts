@@ -1,7 +1,10 @@
+# ReadMe
 
+made by [**jamkles**]
 
 ### Camlock
-```lua
+```
+
 getgenv().Prediction = 0.135 ---// Ping prediction customised by you //--
 getgenv().Smoothness = 0.9  ---// don’t use above 1 otherwise the camlock will go weird  //--
 getgenv().AimPart = "UpperTorso" ---//  Choose what part to aim //--
