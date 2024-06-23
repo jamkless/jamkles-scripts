@@ -1,6 +1,6 @@
 # jamkles-scripts
 
-made by the one and only [**jamkles*] skid as much as you need
+made by the one and only [**jamkles**] skid as much as you need
 
 ### Camlock loadstring
 
