@@ -2,6 +2,12 @@
 
 made by the one and only [**jamkles*] skid as much as you need
 
+### Camlock loadstring
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jamkless/jamkles-scripts/main/camlock.lua", true))()
+```
+
 ### Camlock
 
 ```lua
